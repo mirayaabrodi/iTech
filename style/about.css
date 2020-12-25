@@ -1,0 +1,589 @@
+:root {
+  --main-purple-dark-color: #7744d9;
+  --main-purple-light-color: #c216db;
+  --header-text-color: #232323;
+  --paragraph-color: #868686;
+  --section-color: #eff2f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  color: var(--paragraph-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--header-text-color);
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Navbar */
+
+.navbar {
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  z-index: 1000;
+  position: fixed;
+  justify-content: space-evenly;
+  text-align: center;
+  box-shadow: 0.7rem 0.7rem 0.5rem rgba(135, 134, 134, 0.1);
+  background: #fff;
+}
+
+/* Navbar | Logo */
+
+.navbar .navbar__logo {
+  color: var(--main-purple-dark-color);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* Navbar | "The Real Navigationbar" */
+
+.navbar ul {
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.navbar .navbar__list .navbar__list--link a {
+  color: var(--header-text-color);
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar__list .navbar__list--link a:hover {
+  color: var(--main-purple-light-color);
+}
+
+.navbar .navbar__list .navbar__list--link {
+  display: flex;
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  color: var(--header-text-color);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* About Intro */
+
+.about-intro {
+  height: 50vh;
+  padding: 10rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#7844d9a4, #c116db98),
+    url("../Assets/images/new-york.jpg") no-repeat center center/cover;
+}
+
+.about-intro .about-intro__title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-intro .about-intro__nav,
+.about-intro .about-intro__nav a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* About Company  */
+
+.about-company {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 10rem 20rem;
+}
+
+/* About Company | Image */
+
+.about-company .about-company__images {
+  position: relative;
+  width: 50vw;
+  transition: all .3s ease;
+}
+
+.about-company .about-company__images img {
+  position: absolute;
+  width: 50%;
+  box-shadow: -0.7rem -0.7rem 0.7rem rgba(121, 121, 121, 0.1),
+    0.7rem 0.7rem 0.7rem rgba(121, 121, 121, 0.1);
+    transition: all .3s ease;
+}
+
+.about-company .about-company__images img:last-child {
+  top: 20rem;
+  left: 30rem;
+}
+
+/* About Company | Intro Text*/
+
+.about-company .about-company___intro {
+  position: relative;
+  width: 50vw;
+}
+
+.about-company___intro .about-company___title--mini {
+  color: var(--main-purple-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-company___intro .about-company___title--big {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.about-company___intro .about-company___description {
+  margin-bottom: 3rem;
+}
+
+/* About Company | Intro Text - Goal Text */
+
+.about-company-goals .about-company-goals__card {
+  display: flex;
+  margin: 3rem;
+}
+
+.about-company-goals .about-company-goals__card .fas {
+  margin-right: 2rem;
+  font-size: 5rem;
+  color: var(--main-purple-dark-color);
+  text-shadow: -0.7rem -0.7rem 0.7rem rgba(92, 92, 92, 0.1),
+    0.7rem 0.7rem 0.7rem rgba(92, 92, 92, 0.1);
+}
+
+.about-company-goals
+  .about-company-goals__card
+  > div
+  .about-company-goals__title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* About Company | Intro Text - Button */
+
+.about-company___intro .about-company___button {
+  margin-left: 10rem;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--main-purple-dark-color);
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Mini Info */
+
+.mini-info {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  align-items: center;
+  background: linear-gradient(#7844d9b1, #b143faa4),
+    url(../Assets/images/new-york.jpg) no-repeat center center/cover;
+  padding: 0 10rem;
+}
+
+.mini-info .mini-info__part {
+  text-align: center;
+}
+
+.mini-info .mini-info__part h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.mini-info .mini-info__part p {
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Expertise */
+
+.expertise {
+  height: auto;
+  padding: 10rem;
+  background: var(--section-color);
+}
+
+/* Expertise */
+
+.expertise .expertise__card {
+  display: flex;
+  margin: -20rem 0;
+  justify-content: center;
+}
+
+.expertise .expertise__img {
+  width: 50%;
+  box-shadow: -0.7rem -0.7rem 0.5rem rgba(141, 141, 141, 0.1),
+    0.7rem 0.7rem 0.5rem rgba(141, 141, 141, 0.1);
+}
+
+.expertise .expertise__card .expertise__content {
+  background: #fff;
+  padding: 5rem;
+  box-shadow: -0.7rem -0.7rem 0.5rem rgba(141, 141, 141, 0.1),
+    0.7rem 0.7rem 0.5rem rgba(141, 141, 141, 0.1);
+}
+
+.expertise__content .expertise__title--mini {
+  color: var(--main-purple-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.expertise__content .expertise__title--big {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.expertise__content.expertise__description {
+  margin-bottom: 3rem;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Why Choose us */
+
+.us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem 10rem 5rem 10rem;
+    background: var(--section-color);
+}
+
+.us .us__title--mini {
+    color: var(--main-purple-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.us .us__title--big {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+/* Why Choose Us | Content  */
+
+
+.us-content .content {
+    display: flex;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content .content__card {
+    padding: 2rem;
+    margin: 2rem; 
+}
+
+
+.content .content__card .content__title {
+  font-weight: 600;
+  font-size: 1.9rem;
+  padding: 1.5rem 0;
+}
+
+.content .content__card .content__title .colored{
+    color: var(--main-purple-dark-color);
+  }
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Team Member */
+
+.team {
+  padding: 10rem;
+  text-align: center;
+}
+
+/* Team Member | Intro  */
+
+.team .team__title--mini {
+  color: var(--main-purple-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.team .team__title--big {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Team | Content  */
+
+.team .team__content {
+  display: flex;
+  padding: 5rem 10rem;
+}
+
+.team__content .card {
+  transition: all 0.4s ease;
+  backface-visibility: hidden;
+}
+
+/* Team  | Images | Card  */
+
+.team .team__content .card img {
+  width: 70%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: -0.7rem -0.7rem 0.5rem rgba(141, 141, 141, 0.1),
+.7rem  0  0.4rem rgba(141, 141, 141, 0.1);
+}
+
+/* Team | Card | Text */
+
+.team__content .card__content {
+  padding: 2rem;
+  margin: -1rem 5.6rem 0 5.6rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-bottom: 3px solid var(--main-purple-dark-color);
+  box-shadow: 0 -.7rem  .4rem rgba(141, 141, 141, 0.1),
+  0.7rem 0.7rem 0.4rem rgba(141, 141, 141, 0.1);
+}
+
+.team__content .card .card__name {
+  font-size: 1.8rem;
+  color: var(--header-text-color);
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.team__content .card .card__author {
+  font-size: 1.4rem;
+  color: var(--paragraph-color);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Testimonal */
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem;
+  background: var(--section-color);
+}
+
+/* Testimonial | Intro */
+
+.testimonial__title--mini {
+  color: var(--main-purple-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__title--big {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__description {
+  margin-bottom: 3rem;
+}
+
+/* Testimonial | Feedback */
+
+.feedback {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback .feedback__card {
+  padding: 3rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: -0.7rem -0.7rem 0.9rem rgba(208, 207, 207, 0.1),
+    0.7rem 0.7rem 0.7rem rgba(174, 174, 174, 0.1);
+  margin: 1rem 2rem;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.feedback .feedback__card .feedback__img {
+  width: 30%;
+  margin: 2rem 0;
+  border-radius: 50%;
+}
+
+.feedback .feedback__description {
+  margin-bottom: 2rem;
+}
+
+.feedback .feedback__author {
+  color: var(--header-text-color);
+  font-weight: 500;
+}
+
+.feedback .feedback__author .mini {
+  color: var(--main-purple-dark-color);
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  column-gap: 15rem;
+  padding: 5rem 0;
+}
+
+/*  Footer | Footer-Logo */
+
+.footer .footer__logo--title {
+  color: var(--main-purple-dark-color);
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Footer | Footer-Helpful-Links */
+
+.footer .footer__links--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__links--list {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.footer .footer__links--list a {
+  color: var(--paragraph-color);
+  font-size: 1.4rem;
+}
+
+/* Footer | Footer-Supports */
+
+.footer .footer__supports--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__supports--list {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.footer .footer__links--links a,
+.footer .footer__links--links {
+  color: var(--paragraph-color);
+  font-size: 1.4rem;
+}
+
+/* Footer | Footer-Address */
+
+.footer .footer__address--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__address--links .thick {
+  font-weight: 600;
+}
+
+.footer .footer__address--links {
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.footer .footer__address--links .thick {
+  font-weight: 600;
+}
+
+.footer .footer__address .footer_address--social {
+  padding: 1rem 0;
+}
+
+/* Footer | Copyrights */
+
+.footer__copyright {
+  background: var(--section-color);
+  padding: 2rem;
+  text-align: center;
+
+  box-shadow: -0.7rem -0.7rem 0.3rem rgba(211, 211, 211, 0.1);
+}
+
+.footer__copyright .footer__copyright--text {
+  color: #717272;
+}

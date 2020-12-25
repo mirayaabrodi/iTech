@@ -1,0 +1,123 @@
+:root {
+	--main-purple-dark-color: #7744d9;
+	--main-purple-light-color: #C216DB;
+	--header-text-color: #232323;
+	--paragraph-color: #868686;
+	--section-color: #eff2f7;
+}
+
+/* Hero Content */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  /* 80% {
+    transform: translateX(1rem);
+  } */
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  /* 80% {
+    transform: translateX(-1rem);
+  } */
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes hero-button {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/* Hero Images */
+
+@keyframes img-1 {
+
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1rem);
+  }
+
+}
+
+@keyframes img-2 {
+
+  from {
+    transform: translateY(-2rem);
+  }
+
+  to {
+    transform: translateY(-.5rem);
+  }
+
+}
+
+
+@keyframes img-3 {
+
+  from {
+    transform: translateY(-.7rem);
+  }
+
+  to {
+    transform: translateY(-3rem);
+  }
+
+}
+
+
+@keyframes img-4 {
+
+  from {
+    transform: translateY(-.5rem);
+
+  }
+
+  to {
+    transform: translateY(-4rem);
+  }
+
+}
+
+
+
+/* Cloud Service | Image  */
+
+@keyframes rot-circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to { 
+    transform: rotate(360deg);
+   }
+
+}
+
+

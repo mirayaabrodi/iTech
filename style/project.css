@@ -1,0 +1,630 @@
+
+:root {
+    --main-purple-dark-color: #7744d9;
+    --main-purple-light-color: #c216db;
+    --header-text-color: #232323;
+    --paragraph-color: #868686;
+    --section-color: #eff2f7;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    color: var(--paragraph-color);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: var(--header-text-color);
+  }
+  
+  /* ------------------------------------------------------------------------------------------------- */
+  
+  /* Navbar */
+  
+  .navbar {
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    z-index: 1000;
+    position: fixed;
+    justify-content: space-evenly;
+    text-align: center;
+    box-shadow: 0.7rem 0.7rem 0.5rem rgba(135, 134, 134, 0.1);
+    background: #fff;
+  }
+  
+  /* Navbar | Logo */
+  
+  .navbar .navbar__logo {
+    color: var(--main-purple-dark-color);
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  /* Navbar | "The Real Navigationbar" */
+  
+  .navbar ul {
+    display: flex;
+    margin-top: 1.2rem;
+  }
+  
+  .navbar .navbar__list .navbar__list--link a {
+    color: var(--header-text-color);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .navbar__list .navbar__list--link a:hover {
+    color: var(--main-purple-light-color);
+  }
+  
+  .navbar .navbar__list .navbar__list--link {
+    display: flex;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    color: var(--header-text-color);
+  }
+
+
+  /* --------------------------------------------------------------------------------------------- */
+
+
+
+/* Contact Intro */
+
+.project-intro {
+
+    height: 50vh;
+    padding: 10rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#7844d9a4, #c116db98),
+      url("../Assets/images/new-york.jpg") no-repeat center center/cover;
+  }
+  
+  .project-intro .project-intro__title {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .project-intro .project-intro__nav,
+  .project-intro .project-intro__nav a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+  }
+  
+
+  /* --------------------------------------------------------------------------------------------- */
+
+/* Project */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10rem 15rem;
+    height: auto;
+  }
+  
+  /* Project | Intro */
+  
+  .project__title--mini {
+    color: var(--main-purple-dark-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project__title--big {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project__description {
+    margin-bottom: 3rem;
+  }
+  
+  /* Project | Content */
+  
+  .project .project__content .card {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 30rem;
+  }
+  
+  .project__content .card div img {
+    width: 90%;
+    border-radius: 0.5rem;
+    box-shadow: -0.7rem -0.7rem 0.7rem rgba(121, 121, 121, 0.1),
+      0.7rem 0.7rem 0.7rem rgba(121, 121, 121, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 5rem;
+    transition: 0.3s;
+  }
+  
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  column-gap: 15rem;
+  background: var(--section-color);
+  padding: 5rem 0;
+}
+
+/*  Footer | Footer-Logo */
+
+.footer .footer__logo--title {
+  color: var(--main-purple-dark-color);
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Footer | Footer-Helpful-Links */
+
+.footer .footer__links--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__links--list {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.footer .footer__links--list a {
+  color: var(--paragraph-color);
+  font-size: 1.4rem;
+}
+
+/* Footer | Footer-Supports */
+
+.footer .footer__supports--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__supports--list {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.footer .footer__links--links a,
+.footer .footer__links--links {
+  color: var(--paragraph-color);
+  font-size: 1.4rem;
+}
+
+/* Footer | Footer-Address */
+
+.footer .footer__address--title {
+  font-size: 1.6rem;
+  color: var(--header-text-color);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer .footer__address--links .thick {
+  font-weight: 600;
+}
+
+.footer .footer__address--links {
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.footer .footer__address--links .thick {
+  font-weight: 600;
+}
+
+.footer .footer__address .footer_address--social {
+  padding: 1rem 0;
+}
+
+
+/* Footer | Copyrights */
+
+.footer__copyright  {
+background: #fff;
+padding: 2rem;
+text-align: center;
+
+box-shadow: -0.7rem -0.7rem 0.3rem rgba(211, 211, 211, 0.1);
+}
+
+
+.footer__copyright  .footer__copyright--text {
+  color: #717272;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Media Queary - 144rem */
+
+@media (max-width: 144rem) {
+
+  /* Project */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 0;
+}
+}
+
+
+
+/* Media Queary - 144rem */
+
+@media (max-width: 144rem) {
+
+
+/* Project | Content */
+
+.project .project__content .card {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 20rem;
+}
+
+.project__content .card div img {
+  width: 60%;
+  margin-bottom: 3rem;
+ 
+}
+
+
+
+}
+
+
+/* Media Query | 118rem */
+
+@media (max-width: 118rem){
+
+/* Footer */
+.footer {
+  grid-template-columns: repeat(2, auto);
+}
+
+
+/* Footer | Footer-Supports */
+.footer .footer__supports{
+  margin: 2rem 0;
+}
+
+
+/* Footer | Footer-Address */
+.footer .footer__address {
+  margin: 2rem 0;
+}
+
+/* Footer | Copyrights */
+.footer__copyright p {
+ font-size: 1.4rem;
+}
+}
+
+
+
+/* Media Queary - 103rem */
+
+@media (max-width: 103rem) {
+
+
+  /* Project | Content */
+  
+  .project .project__content .card {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 10rem;
+  }
+  
+  .project__content .card div img {
+    width: 95%;
+    margin:0 2rem 3rem 2rem;
+   
+  }
+  
+  }
+
+  
+
+
+/* Media Query | 83rem */
+
+@media (max-width: 83rem) {
+
+ /* Navbar */
+
+.navbar {
+  display: flex;
+  padding: 2rem .5rem;
+  position: fixed;
+  justify-content: space-evenly;
+}
+
+}
+
+
+
+
+/* Media Queary - 78rem */
+
+@media (max-width: 78rem) {
+
+
+  /* Project | Content */
+  
+  .project .project__content .card {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 2rem;
+  }
+  
+  .project__content .card div img {
+    width: 95%;
+   
+  }
+  
+  }
+
+
+/* Media Query | 76rem */
+
+@media (max-width: 76rem) {
+
+
+ /* Navbar */
+
+ .navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  justify-content: center;
+}
+ 
+ /* Navbar | Logo */
+ 
+ .navbar .navbar__logo {
+   font-size: 4rem;
+ }
+ 
+ /* Navbar | "The Real Navigationbar" */
+ 
+ .navbar ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 1.2rem;
+ }
+ 
+ .navbar .navbar__list .navbar__list--link {
+   padding: 1rem 1.5rem;
+   font-size: 1.8rem;
+ }
+ }
+ 
+
+
+/* Media Query | 70rem */
+
+@media (max-width: 70rem){
+  
+  /* Footer */
+  .footer {
+    grid-template-columns: repeat(1, auto);
+text-align: center;
+  }
+
+  .footer__links {
+    margin: 2rem 0;
+  }
+  
+ .footer__address .footer_address--social {
+   margin-top: 1rem;}
+
+/* Footer | Copyrights */
+.footer__copyright p {
+  font-size: 1.2rem;
+ }
+   
+ }
+
+
+/* Media Query | 63rem */
+
+@media (max-width: 63rem) {
+
+ /* Navbar */
+
+ .navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  justify-content: center;
+}
+ 
+ /* Navbar | Logo */
+ 
+ .navbar .navbar__logo {
+   font-size: 4rem;
+ }
+ 
+ /* Navbar | "The Real Navigationbar" */
+ 
+ .navbar ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 1.2rem;
+ }
+ 
+ .navbar .navbar__list .navbar__list--link {
+   padding: 1rem;
+   font-size: 1.8rem;
+ }
+
+}
+
+
+
+/* Media Query | 50rem */
+
+@media (max-width: 50rem) {
+
+
+
+  /* Navbar */
+ 
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    justify-content: center;
+  }
+   
+   /* Navbar | Logo */
+   
+   .navbar .navbar__logo {
+     font-size: 4rem;
+   }
+   
+   /* Navbar | "The Real Navigationbar" */
+   
+   .navbar ul {
+     display: block;
+     justify-content: center;
+     margin-top: 1.2rem;
+   }
+   
+   .navbar .navbar__list .navbar__list--link {
+     padding: 1rem .6rem;
+     font-size: 1.8rem;
+     display: block;
+   }
+
+
+     /* Project | Intro */
+
+  
+  .project__title--big {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project__description {
+    margin-bottom: 3rem;
+    padding: 0 5rem;
+  }
+
+
+    /* Project | Content */
+
+   .project .project__content .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem;
+  }
+  
+  .project__content .card div img {
+    width: 50%;
+   
+  }
+
+}
+
+
+
+
+/* Media Query | 46rem */
+
+@media (max-width: 46rem) {
+
+
+     /* Project | Intro */
+
+  
+  .project__title--big {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .project__description {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+  }
+
+
+    /* Project | Content */
+
+   .project .project__content .card {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem;
+  }
+  
+  .project__content .card div img {
+    width: 70%;
+   
+  }
+
+}

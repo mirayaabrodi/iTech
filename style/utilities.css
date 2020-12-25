@@ -1,0 +1,407 @@
+:root {
+  --main-purple-dark-color: #7744d9;
+  --main-purple-light-color: #c216db;
+  --header-text-color: #232323;
+  --paragraph-color: #868686;
+  --section-color: #eff2f7;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Navbar | "Contact" - link  */
+
+.navbar .navbar__list .navbar__list--link:last-child,
+.navbar .navbar__list .navbar__list--link:last-child:link,
+.navbar .navbar__list .navbar__list--link:last-child:visited {
+  background: var(--main-purple-dark-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+  margin-left: 2rem;
+  padding: 0.8rem 1.2rem;
+  
+}
+
+.navbar .navbar__list .navbar__list--link:last-child:hover {
+  background: var(--main-purple-light-color);
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Hero Content - Button */
+
+.hero .hero-content .hero-content__button:hover {
+  transform: perspective(100rem) translateY(-.5rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.193);
+}
+
+
+.hero .hero-content .hero-content__button:active,
+.hero .hero-content .hero-content__button:focus {
+  outline: none;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* About - Card - Fontawesome */
+
+.card .fa-code-branch {
+  background: var(--main-purple-dark-color);
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.card .fa-users {
+  background: #e26161;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  color: #fff;
+  padding: 1.6rem 1.4rem;
+}
+
+.card .fa-code {
+  background: var(--main-purple-light-color);
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  color: #fff;
+  padding: 1.6rem 1.4rem;
+}
+
+.card .fa-list {
+  background: #ff9900;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  color: #fff;
+  padding: 1.6rem 1.4rem;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Cloud Service | Content */
+
+.cloud-service .service-info .service-info--inf .fa-cloud-download-alt {
+  font-size: 1.5rem;
+}
+
+/* Cloud Service | Secondary Content | Card */
+
+.cloud-content__secondary .cloud-content__card .cloud-content__paragraph:hover {
+  transform: perspective(100rem) translateX(1rem);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Web  Service | Secondary Content | Card */
+
+.web-content__secondary .web-content__card .web-content__paragraph:hover {
+  transform: perspective(100rem) translateX(1rem);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Project | Content */
+
+.project__content .card div img:hover {
+  transform: perspective(100rem) translateY(-1rem);
+}
+
+/* Project | Content | Button */
+.project .project-content__button a:hover {
+  background: var(--main-purple-light-color);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Advertisement | Button */
+
+.advertisement .advertisement__button:hover {
+  background: #fff;
+  color: var(--main-purple-light-color);
+}
+
+.advertisement .advertisement__button:focus {
+  outline: none;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Price | Package | Card */
+
+.package a:hover .package__name,
+.package a:hover .package__button {
+  background: var(--main-purple-light-color);
+  transition: all 0.3s ease;
+}
+
+.package a:hover .package__price {
+  color: var(--main-purple-light-color);
+  transition: all 0.3s ease;
+}
+
+.package a:hover .package__info {
+  border: 1px solid var(--main-purple-light-color);
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Blog | Feedback */
+
+.feedback .feedback__card:hover {
+  transform: perspective(100rem) translateY(-1rem);
+}
+
+/* Blog | Blog Post | Card*/
+
+.blog-post .blog-post__card:hover {
+  transform: perspective(100rem) translateY(-1rem);
+}
+
+.blog-post__content .blog-post__title:hover {
+  color: var(--main-purple-dark-color);
+}
+
+.blog-post__content .blog-post__author:hover {
+  color: var(--header-text-color);
+}
+
+.blog-post__content .blog-post__button:hover {
+  color: var(--main-purple-dark-color);
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* Contact Intro */
+
+.contact-intro .contact-intro__nav a:hover {
+  color: var(--paragraph-color);
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* Contact Secondary | Contact Form */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+}
+
+.contact-form button:hover{
+  transform: perspective(100rem) translateY(-.5rem);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.145);
+
+}
+
+.contact-form button:active,
+.contact-form button:focus{ 
+  outline: none;
+  transform: translateY(-.2rem);
+  box-shadow: 0 1rem 1rem rgba(112, 112, 112, 0.145);} 
+
+
+/* Contact Intro */
+
+.project-intro .project-intro__nav a:hover {
+	color: var(--paragraph-color);
+  }
+  
+
+  /* ----------------------------------------------------------------------------------------------- */
+
+
+/* Faq Intro */
+
+.faq-intro .faq-intro__nav a:hover {
+	color: var(--paragraph-color);
+  }
+
+  .faq-qa .faq-qa__card > div:hover  {
+    transform: perspective(100rem) translateX(1rem);
+  } 
+
+  
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* Blog Intro */
+
+.blog-intro .blog-intro__nav a:hover {
+	color: var(--paragraph-color);
+  }
+
+  .blog-qa .blog-qa__card > div:hover  {
+    transform: perspective(100rem) translateX(1rem);
+  } 
+
+
+/* Blog | Sidebar*/
+
+.blog__sidebar .sidebar__search input:focus {
+  outline: none;
+}
+
+.blog__sidebar .meta p:hover,
+.blog__sidebar .archives p:hover,
+.blog__sidebar .popular-categories p:hover {
+transition: all .3s ease;
+  color: var(--main-purple-dark-color);
+}
+
+
+.popular-post__article .blog-post__author:hover,
+.popular-post__article .blog-post__title:hover {
+  transition: all .3s ease;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* service Intro */
+
+.service-intro .service-intro__nav a:hover {
+	color: var(--paragraph-color);
+  }
+
+/* Service | Card */
+
+.service-content .card:hover {
+transform: perspective(100rem) translateY(-1rem) translateX(-1rem);
+box-shadow: -.1rem -.1rem .7rem rgba(191, 191, 191, 0.1),
+.7rem .7rem .7rem rgba(174, 174, 174, 0.1);
+}
+
+/* Service| Content (Font) */
+
+.service-content .fa-chart-bar {
+  color: #fff;
+  background: var(--main-purple-dark-color);
+  
+}
+
+.service-content .fa-ruler{
+  color: #fff;
+  background: #ff9900;
+}
+
+.service-content .fa-folder {
+  color: #fff;
+  background: var(--main-purple-light-color);
+
+}
+
+.service-content .fa-sort-amount-up{
+  color: #fff;
+  background: #74B816;
+}
+
+.service-content .fa-chart-line{
+  color: #fff;
+  background: #e26161;
+}
+
+.service-content .fa-fingerprint{
+  color: #fff;
+  background:  #4579d1;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* About Intro */
+
+.about-intro .about-intro__nav a:hover {
+	color: var(--paragraph-color);
+  }
+
+
+  /* About Company | Intro Text - Button */
+
+
+  .about-company___intro .about-company___button:hover {
+    background: var(--main-purple-light-color);
+  }
+
+
+  .about-company___intro .about-company___button:focus {
+    outline: none;
+  }
+
+
+
+  .about-company .about-company__images img:first-child:hover {
+    transition: all .3s ease;
+    transform: perspective(100rem) translateY(-1rem) translateX(-1rem);
+    box-shadow: -0.2rem -0.2rem .7rem rgba(121, 121, 121, 0.1),
+    0.7rem 0.7rem 0.7rem rgba(49, 49, 49, 0.1);
+  }
+
+  .about-company .about-company__images img:last-child:hover {
+    transition: all .3s ease;
+    transform: perspective(100rem) translateY(-1rem) translateX(-1rem);
+z-index: 200;
+box-shadow: -0.2rem -0.2rem .7rem rgba(121, 121, 121, 0.1),
+0.7rem 0.7rem 0.7rem rgba(53, 53, 53, 0.1);
+  }
+
+
+
+      /* --------------------------------------------------------------------------------------------- */
+
+
+  /* Team Member */
+
+
+  .team__content .card:nth-child(1):hover,
+  .team__content .card:nth-child(2):hover {
+    transform: perspective(100rem) translateY(-1rem) translateX(-1rem);
+}
+
+
+.team__content .card:nth-child(3):hover,
+.team__content .card:nth-child(4):hover {
+  transform: perspective(100rem) translateY(-1rem) translateX(1rem);
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Footer | Footer-Supports/Helpful-Links */
+
+.footer .footer__links--links:hover,
+.footer .footer__links--links a:hover,
+.footer .footer__links--list a:hover {
+  color: var(--main-purple-dark-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer | Footer-Social-Media */
+
+.footer .footer_address--social .fab:hover {
+  color: var(--main-purple-dark-color);
+  transition: all 0.3s ease;
+  transform: perspective(100rem) translateY(-.5rem);
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* Media Query | 63rem */
